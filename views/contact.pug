@@ -1,0 +1,166 @@
+extends base
+
+block content
+
+    // Page Title (Light)
+    .bg-secondary.py-4
+        .container.d-lg-flex.justify-content-between.py-2.py-lg-3
+            .order-lg-2.mb-3.mb-lg-0.pt-lg-2
+                nav(aria-label='breadcrumb')
+                    ol.breadcrumb.flex-lg-nowrap.justify-content-center.justify-content-lg-start
+                        li.breadcrumb-item
+                            a.text-nowrap(href='/')
+                                i.ci-home
+                                | Home
+                        li.breadcrumb-item.text-nowrap.active(aria-current='page') Contacts
+            .order-lg-1.pe-lg-4.text-center.text-lg-start
+                h1.h3.mb-0 Contacts
+    // Contact detail cards
+    section.container-fluid.pt-grid-gutter
+        .row
+            .col-xl-3.col-sm-6.mb-grid-gutter
+                a.card.h-100(href='#map' data-scroll='')
+                    .card-body.text-center
+                        i.ci-location.h3.mt-2.mb-4.text-primary
+                        h3.h6.mb-2 Main store address
+                        p.fs-sm.text-muted 396 Lillian Blvd, Holbrook, NY 11741, USA
+                        .fs-sm.text-primary
+                            | Click to see map
+                            i.ci-arrow-right.align-middle.ms-1
+            .col-xl-3.col-sm-6.mb-grid-gutter
+                .card.h-100
+                    .card-body.text-center
+                        i.ci-time.h3.mt-2.mb-4.text-primary
+                        h3.h6.mb-3 Working hours
+                        ul.list-unstyled.fs-sm.text-muted.mb-0
+                            li Mon - Fri: 10AM - 7PM
+                            li.mb-0 Sta: 11AM - 5PM
+            .col-xl-3.col-sm-6.mb-grid-gutter
+                .card.h-100
+                    .card-body.text-center
+                        i.ci-phone.h3.mt-2.mb-4.text-primary
+                        h3.h6.mb-3 Phone numbers
+                        ul.list-unstyled.fs-sm.mb-0
+                            li
+                                span.text-muted.me-1 For customers:
+                                a.nav-link-style(href='tel:+108044357260') +1 (080) 44 357 260
+                            li.mb-0
+                                span.text-muted.me-1 Tech support:
+                                a.nav-link-style(href='tel:+100331697720') +1 00 33 169 7720
+            .col-xl-3.col-sm-6.mb-grid-gutter
+                .card.h-100
+                    .card-body.text-center
+                        i.ci-mail.h3.mt-2.mb-4.text-primary
+                        h3.h6.mb-3 Email addresses
+                        ul.list-unstyled.fs-sm.mb-0
+                            li
+                                span.text-muted.me-1 For customers:
+                                a.nav-link-style(href='mailto:+108044357260') customer@example.com
+                            li.mb-0
+                                span.text-muted.me-1 Tech support:
+                                a.nav-link-style(href='mailto:support@example.com') support@example.com
+    // Outlet stores
+    section.container.pt-4.mt-md-4.mb-5
+        h2.h3.text-center.mb-3 Partner outlet stores
+        .row.pt-4
+            .col-md-4.col-sm-6.mb-grid-gutter
+                .card.border-0.shadow
+                    img.card-img-top(src='img/contacts/orlando.jpg' alt='Orlando')
+                    .card-body
+                        h6 Orlando, USA
+                        ul.list-unstyled.mb-0
+                            li.d-flex.pb-3.border-bottom
+                                i.ci-location.fs-lg.mt-2.mb-0.text-primary
+                                .ps-3
+                                    span.fs-ms.text-muted Find us
+                                    a.d-block.text-heading.fs-sm(href='#') 514 S. Magnolia St. Orlando, FL 32806, USA
+                            li.d-flex.pt-2.pb-3.border-bottom
+                                i.ci-phone.fs-lg.mt-2.mb-0.text-primary
+                                .ps-3
+                                    span.fs-ms.text-muted Call us
+                                    a.d-block.text-heading.fs-sm(href='tel:+178632256040') +1 (786) 322 560 40
+                            li.d-flex.pt-2
+                                i.ci-mail.fs-lg.mt-2.mb-0.text-primary
+                                .ps-3
+                                    span.fs-ms.text-muted Write us
+                                    a.d-block.text-heading.fs-sm(href='mailto:orlando@example.com') orlando@example.com
+            .col-md-4.col-sm-6.mb-grid-gutter
+                .card.border-0.shadow
+                    img.card-img-top(src='img/contacts/chicago.jpg' alt='Chicago')
+                    .card-body
+                        h6 Chicago, USA
+                        ul.list-unstyled.mb-0
+                            li.d-flex.pb-3.border-bottom
+                                i.ci-location.fs-lg.mt-2.mb-0.text-primary
+                                .ps-3
+                                    span.fs-ms.text-muted Find us
+                                    a.d-block.text-heading.fs-sm(href='#') 769, Industrial, West Chicago, IL 60185, USA
+                            li.d-flex.pt-2.pb-3.border-bottom
+                                i.ci-phone.fs-lg.mt-2.mb-0.text-primary
+                                .ps-3
+                                    span.fs-ms.text-muted Call us
+                                    a.d-block.text-heading.fs-sm(href='tel:+184725276533') +1 (847) 252 765 33
+                            li.d-flex.pt-2
+                                i.ci-mail.fs-lg.mt-2.mb-0.text-primary
+                                .ps-3
+                                    span.fs-ms.text-muted Write us
+                                    a.d-block.text-heading.fs-sm(href='mailto:chicago@example.com') chicago@example.com
+            .col-md-4.col-sm-12.mb-grid-gutter
+                .card.border-0.shadow
+                    img.card-img-top(src='img/contacts/newyork.jpg' alt='New York')
+                    .card-body
+                        h6 New York, USA
+                        ul.list-unstyled.mb-0
+                            li.d-flex.pb-3.border-bottom
+                                i.ci-location.fs-lg.mt-2.mb-0.text-primary
+                                .ps-3
+                                    span.fs-ms.text-muted Find us
+                                    a.d-block.text-heading.fs-sm(href='#') 396 Lillian Blvd, Holbrook, NY 11741, USA
+                            li.d-flex.pt-2.pb-3.border-bottom
+                                i.ci-phone.fs-lg.mt-2.mb-0.text-primary
+                                .ps-3
+                                    span.fs-ms.text-muted Call us
+                                    a.d-block.text-heading.fs-sm(href='tel:+1212477690000') +1 (212) 477 690 000
+                            li.d-flex.pt-2
+                                i.ci-mail.fs-lg.mt-2.mb-0.text-primary
+                                .ps-3
+                                    span.fs-ms.text-muted Write us
+                                    a.d-block.text-heading.fs-sm(href='mailto:newyork@example.com') newyork@example.com
+    // Split section: Map + Contact form
+    #map.container-fluid.px-0
+        .row.g-0
+            .col-lg-6.iframe-full-height-wrap
+                iframe.iframe-full-height(width='600' height='250' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53357.14257194912!2d-73.07268695801845!3d40.78017062807504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e8483b8bffed93%3A0x53467ceb834b7397!2s396+Lillian+Blvd%2C+Holbrook%2C+NY+11741%2C+USA!5e0!3m2!1sen!2sua!4v1558703206875!5m2!1sen!2sua')
+            .col-lg-6.px-4.px-xl-5.py-5.border-top
+                h2.h4.mb-4 Drop us a line
+                form.needs-validation.mb-3(novalidate='')
+                    .row.g-3
+                        .col-sm-6
+                            label.form-label(for='cf-name')
+                                | Your name: 
+                                span.text-danger *
+                            input#cf-name.form-control(type='text' placeholder='John Doe' required='')
+                            .invalid-feedback Please fill in you name!
+                        .col-sm-6
+                            label.form-label(for='cf-email')
+                                | Email address: 
+                                span.text-danger *
+                            input#cf-email.form-control(type='email' placeholder='johndoe@email.com' required='')
+                            .invalid-feedback Please provide valid email address!
+                        .col-sm-6
+                            label.form-label(for='cf-phone')
+                                | Your phone: 
+                                span.text-danger *
+                            input#cf-phone.form-control(type='text' placeholder='+1 (212) 00 000 000' required='')
+                            .invalid-feedback Please provide valid phone number!
+                        .col-sm-6
+                            label.form-label(for='cf-subject') Subject:
+                            input#cf-subject.form-control(type='text' placeholder='Provide short title of your request')
+                        .col-12
+                            label.form-label(for='cf-message')
+                                | Message: 
+                                span.text-danger *
+                            textarea#cf-message.form-control(rows='6' placeholder='Please describe in detail your request' required='')
+                            .invalid-feedback Please write a message!
+                            button.btn.btn-primary.mt-4(type='submit') Send message
+

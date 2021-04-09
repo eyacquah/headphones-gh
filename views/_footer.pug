@@ -1,0 +1,130 @@
+footer.bg-darker(style='margin-top: -300px; padding-top: 300px;')
+    .container.mt-2.pt-5
+        .row.pt-4.pb-3
+            .col-lg-2.col-sm-4.pb-2.mb-4
+                .mt-n1
+                    a.d-inline-block.align-middle(href='#')
+                        img.d-block.mb-4(src='img/footer-logo-light.png' width='117' alt='Cartzilla')
+                .btn-group.dropdown.disable-autohide
+                    button.btn.btn-outline-light.border-light.btn-sm.dropdown-toggle.px-2(type='button' data-bs-toggle='dropdown')
+                        img.me-2(src='img/flags/en.png' width='20' alt='English')
+                        | Eng / $
+                    ul.dropdown-menu.my-1
+                        li.dropdown-item
+                            select.form-select.form-select-sm
+                                option(value='usd') $ USD
+                                option(value='eur') € EUR
+                                option(value='ukp') £ UKP
+                                option(value='jpy') ¥ JPY
+                        li
+                            a.dropdown-item.pb-1(href='#')
+                                img.me-2(src='img/flags/fr.png' width='20' alt='Français')
+                                | Français
+                        li
+                            a.dropdown-item.pb-1(href='#')
+                                img.me-2(src='img/flags/de.png' width='20' alt='Deutsch')
+                                | Deutsch
+                        li
+                            a.dropdown-item(href='#')
+                                img.me-2(src='img/flags/it.png' width='20' alt='Italiano')
+                                | Italiano
+            .col-lg-2.col-sm-4
+                .widget.widget-links.widget-light.pb-2.mb-4
+                    h3.widget-title.text-light Products
+                    ul.widget-list
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Headphones
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Earphones
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Speakers
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Accessories
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Special Offers
+            .col-lg-2.col-sm-4
+                .widget.widget-links.widget-light.pb-2.mb-4
+                    h3.widget-title.text-light For customers
+                    ul.widget-list
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Your Account
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Shipping Rates & Policy
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Refunds & Replacements
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Delivery Info
+            .col-lg-2.col-sm-4
+                .widget.widget-links.widget-light.pb-2.mb-4
+                    h3.widget-title.text-light Company
+                    ul.widget-list
+                        li.widget-list-item
+                            a.widget-list-link(href='#') About Us
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Contacts
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Careers
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Affiliates
+                        li.widget-list-item
+                            a.widget-list-link(href='#') Support
+            .col-lg-4.col-sm-8
+                .widget.pb-2.mb-4
+                    h3.widget-title.text-light.pb-1 Stay informed
+                    form.subscription-form.validate(action='https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;id=29ca296126' method='post' name='mc-embedded-subscribe-form' target='_blank' novalidate='')
+                        .input-group.flex-nowrap
+                            i.ci-mail.position-absolute.top-50.translate-middle-y.text-muted.fs-base.ms-3
+                            input.form-control.rounded-start(type='email' name='EMAIL' placeholder='Your email' required='')
+                            button.btn.btn-primary(type='submit' name='subscribe') Subscribe*
+                        // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                        div(style='position: absolute; left: -5000px;' aria-hidden='true')
+                            input.subscription-form-antispam(type='text' name='b_c7103e2c981361a6639545bd5_29ca296126' tabindex='-1')
+                        .form-text.text-light.opacity-50
+                            | *Subscribe to our newsletter to receive early discount offers, updates and new products info.
+                        .subscription-status
+        hr.hr-light
+        .row.align-items-center.py-4
+            .col-sm-6.py-3
+                .fs-xs.text-light.opacity-50.text-center.text-md-start
+                    | © All rights reserved. Made by 
+                    a.text-light(href='https://createx.studio/' target='_blank' rel='noopener') Createx Studio
+            .col-sm-6.pt-3.pb-2.text-center.text-sm-end
+                a.btn-social.bs-light.bs-twitter.ms-2.mb-2(href='#')
+                    i.ci-twitter
+                a.btn-social.bs-light.bs-facebook.ms-2.mb-2(href='#')
+                    i.ci-facebook
+                a.btn-social.bs-light.bs-instagram.ms-2.mb-2(href='#')
+                    i.ci-instagram
+                a.btn-social.bs-light.bs-pinterest.ms-2.mb-2(href='#')
+                    i.ci-pinterest
+                a.btn-social.bs-light.bs-youtube.ms-2.mb-2(href='#')
+                    i.ci-youtube
+// Toolbar for handheld devices (Single brand store)
+.handheld-toolbar
+    .d-table.table-layout-fixed.w-100
+        a.d-table-cell.handheld-toolbar-item(href='#signin-modal' data-bs-toggle='modal')
+            span.handheld-toolbar-icon
+                i.ci-user
+            span.handheld-toolbar-label Account
+        a.d-table-cell.handheld-toolbar-item(href='javascript:void(0)' data-bs-toggle='collapse' data-bs-target='#navbarCollapse' onclick='window.scrollTo(0, 0)')
+            span.handheld-toolbar-icon
+                i.ci-menu
+            span.handheld-toolbar-label Menu
+        a.d-table-cell.handheld-toolbar-item(href='#')
+            span.handheld-toolbar-icon
+                i.ci-cart
+            span.handheld-toolbar-label $0.00
+// Back To Top Button
+a.btn-scroll-top(href='#top' data-scroll='')
+    span.btn-scroll-top-tooltip.text-muted.fs-sm.me-2 Top
+    i.btn-scroll-top-icon.ci-arrow-up    
+// Vendor scrits: js libraries and plugins
+script(src='vendor/bootstrap/dist/js/bootstrap.bundle.min.js')
+script(src='vendor/simplebar/dist/simplebar.min.js')
+script(src='vendor/tiny-slider/dist/min/tiny-slider.js')
+script(src='vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js')
+script(src='vendor/lightgallery.js/dist/js/lightgallery.min.js')
+script(src='vendor/lg-fullscreen.js/dist/lg-fullscreen.min.js')
+script(src='vendor/lg-zoom.js/dist/lg-zoom.min.js')
+// Main theme script
+script(src='js/theme.min.js')

@@ -1,0 +1,333 @@
+extends base
+
+block content
+    // Hero section
+    section.bg-position-top-center.bg-repeat-0.pt-5.pb-5.py-md-10(style='background-image: url(img/home/mono-product/hero-bg.jpg);')
+        .container.pt-4.mb-3.mb-lg-0
+            .row
+                .col-lg-5.col-md-6.col-sm-8.offset-lg-1
+                    h5.text-light.fw-normal Wireless Bluetooth Headphones
+                    h1.text-light.mb-5 Enjoy the music like never before
+                    .d-flex.align-items-center.mb-5
+                        a.btn.btn-primary.me-grid-gutter(href='#')
+                            i.ci-cart.fs-lg.me-2
+                            | Add to Cart
+                        span.h4.mb-0.text-light.fw-normal
+                            | $329.
+                            small 99
+                    ul.list-unstyled.text-light.mb-0
+                        li.d-flex
+                            i.ci-bluetooth-circle.h5.fw-normal.text-light.me-2
+                            .ps-1 Wireless connection
+                        li.d-flex
+                            i.ci-sound-waves.h5.fw-normal.text-light.me-2
+                            .ps-1 Best in class sound
+                        li.d-flex
+                            i.ci-battery.h5.fw-normal.text-light.me-2
+                            .ps-1 Up to 40 hours battery life
+    // Color options
+    section.container.py-5
+        .row.align-items-center.py-3.py-md-4
+            .col-sm-6
+                #colorOptions.mb-5.mb-sm-0.text-center.text-sm-start
+                    #color-1.radio-tab-pane.active(role='tabpanel')
+                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option01.jpg' alt='Color 1')
+                    #color-2.radio-tab-pane(role='tabpanel')
+                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option02.jpg' alt='Color 1')
+                    #color-3.radio-tab-pane(role='tabpanel')
+                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option03.jpg' alt='Color 1')
+                    #color-4.radio-tab-pane(role='tabpanel')
+                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option04.jpg' alt='Color 1')
+                    #color-5.radio-tab-pane(role='tabpanel')
+                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option05.jpg' alt='Color 1')
+                    #color-6.radio-tab-pane(role='tabpanel')
+                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option06.jpg' alt='Color 1')
+            .col-sm-6.text-center.text-sm-start
+                h2.pb-4 Choose your style
+                .mb-3
+                    span#colorOptionText.fs-sm.text-heading.fw-medium.me-1 Rose Gold
+                    span
+                        | —  $329.
+                        small 99
+                .mb-4.pb-2
+                    .form-check.form-option.form-check-inline.mb-2
+                        input#color1.form-check-input(type='radio' name='color' data-bs-label='colorOptionText' value='Rose Gold' checked='')
+                        label.form-option-label.rounded-circle(for='color1' data-bs-toggle='radioTab' data-bs-target='#color-1' data-bs-parent='#colorOptions')
+                            span.form-option-color.rounded-circle(style='background-color: #e8c4c0;')
+                    .form-check.form-option.form-check-inline.mb-2
+                        input#color2.form-check-input(type='radio' name='color' data-bs-label='colorOptionText' value='Satin Silver')
+                        label.form-option-label.rounded-circle(for='color2' data-bs-toggle='radioTab' data-bs-target='#color-2' data-bs-parent='#colorOptions')
+                            span.form-option-color.rounded-circle(style='background-color: #e6e6e6;')
+                    .form-check.form-option.form-check-inline.mb-2
+                        input#color3.form-check-input(type='radio' name='color' data-bs-label='colorOptionText' value='Satin Gold')
+                        label.form-option-label.rounded-circle(for='color3' data-bs-toggle='radioTab' data-bs-target='#color-3' data-bs-parent='#colorOptions')
+                            span.form-option-color.rounded-circle(style='background-color: #f7e6d5;')
+                    .form-check.form-option.form-check-inline.mb-2
+                        input#color4.form-check-input(type='radio' name='color' data-bs-label='colorOptionText' value='Club Navy')
+                        label.form-option-label.rounded-circle(for='color4' data-bs-toggle='radioTab' data-bs-target='#color-4' data-bs-parent='#colorOptions')
+                            span.form-option-color.rounded-circle(style='background-image: url(img/home/mono-product/colors/color-radio01.png)')
+                    .form-check.form-option.form-check-inline.mb-2
+                        input#color5.form-check-input(type='radio' name='color' data-bs-label='colorOptionText' value='Club White')
+                        label.form-option-label.rounded-circle(for='color5' data-bs-toggle='radioTab' data-bs-target='#color-5' data-bs-parent='#colorOptions')
+                            span.form-option-color.rounded-circle(style='background-image: url(img/home/mono-product/colors/color-radio02.png)')
+                    .form-check.form-option.form-check-inline.mb-2
+                        input#color6.form-check-input(type='radio' name='color' data-bs-label='colorOptionText' value='Club Red')
+                        label.form-option-label.rounded-circle(for='color6' data-bs-toggle='radioTab' data-bs-target='#color-6' data-bs-parent='#colorOptions')
+                            span.form-option-color.rounded-circle(style='background-image: url(img/home/mono-product/colors/color-radio03.png)')
+                a.btn.btn-primary(href='#')
+                    i.ci-cart.fs-lg.me-2
+                    | Add to Cart
+    // Divider
+    hr.mt-md-2.mb-5
+    // Gallery
+    section.container.pt-2.pt-md-5
+        h2.text-center.mb-5 Product gallery
+        .row.gallery
+            .col-md-4.col-sm-6.mb-grid-gutter
+                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/01.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='img/home/mono-product/gallery/th01.jpg' alt='Gallery thumbnail')
+                    span.gallery-item-caption Gallery image caption
+            .col-md-4.col-sm-6.mb-grid-gutter
+                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/02.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='img/home/mono-product/gallery/th02.jpg' alt='Gallery thumbnail')
+                    span.gallery-item-caption Gallery image caption
+            .col-md-4.col-sm-6.mb-grid-gutter
+                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/03.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='img/home/mono-product/gallery/th03.jpg' alt='Gallery thumbnail')
+                    span.gallery-item-caption Gallery image caption
+            .col-md-4.col-sm-6.mb-grid-gutter
+                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/04.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='img/home/mono-product/gallery/th04.jpg' alt='Gallery thumbnail')
+                    span.gallery-item-caption Gallery image caption
+            .col-md-4.col-sm-6.mb-grid-gutter
+                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/05.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='img/home/mono-product/gallery/th05.jpg' alt='Gallery thumbnail')
+                    span.gallery-item-caption Gallery image caption
+            .col-md-4.col-sm-6.mb-grid-gutter
+                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/06.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='img/home/mono-product/gallery/th06.jpg' alt='Gallery thumbnail')
+                    span.gallery-item-caption Gallery image caption
+    // Product details
+    section.container.py-4.py-md-5.my-2
+        h2.text-center.mb-4.mb-md-5.pb-2 Product details
+        .row.text-center.text-sm-start
+            .col-lg-5.col-md-6.col-sm-8.offset-lg-2.offset-md-1
+                h5.mb-3 Highlights
+                p.fs-sm.mb-3.mb-lg-4.pb-2
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit animasurel. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                h5.mb-3 Battery
+                ul.list-unstyled.fs-sm.mb-3.mb-lg-4.pb-1
+                    li Up to 40 hours life
+                    li Fast charging technology
+                    li Charge via Micro-USB cable
+            .col-lg-3.col-md-4.col-sm-4.offset-md-1
+                h5.mb-3 General
+                ul.list-unstyled.fs-sm.mb-3.mb-lg-4.pb-1
+                    li Height: 7.8 in / 19.8 cm
+                    li Weight: 7.58 oz / 215 g
+                    li Form factor: On ear
+                h5.mb-3 Connectivity
+                ul.list-unstyled.fs-sm.mb-3.mb-lg-4.pb-1
+                    li Wireless Bluetooth
+                    li Micro-USD port
+                h5.mb-3 Other features
+                ul.list-unstyled.fs-sm.mb-3.mb-lg-4.pb-1
+                    li Lightweight
+                    li Durable materials
+    // Reviews
+    section.bg-secondary.pt-5(style='padding-bottom: 300px;')
+        .container.py-md-5.mb-4.pt-3.pb-4
+            h2.text-center.mb-4.mb-md-5.pb-2 Customer reviews
+            .tns-carousel.mb-3
+                .tns-carousel-inner(data-carousel-options='{"items": 2, "controls": false, "responsive": {"0":{"items":1, "gutter":20}, "576":{"items":2, "gutter":20},"850":{"items":3, "gutter":20},"1080":{"items":4, "gutter":25}}}')
+                    blockquote.mb-2
+                        .card.border-0.shadow-sm
+                            span.testimonial-mark
+                            .card-body.fs-md.text-muted
+                                .mb-2
+                                    .star-rating
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star
+                                | Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        footer.d-flex.justify-content-center.pt-4
+                            .d-flex.align-items-center
+                                img.rounded-circle(src='img/testimonials/03.jpg' width='50' alt='Richard Davis')
+                                .ps-3
+                                    h6.fs-sm.mb-n1 Richard Davis
+                                    span.fs-ms.text-muted.opacity-75 Feb 14, 2020
+                    blockquote.mb-2
+                        .card.border-0.shadow-sm
+                            span.testimonial-mark
+                            .card-body.fs-md.text-muted
+                                .mb-2
+                                    .star-rating
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                | Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        footer.d-flex.justify-content-center.pt-4
+                            .d-flex.align-items-center
+                                img.rounded-circle(src='img/testimonials/04.jpg' width='50' alt='Laura Willson')
+                                .ps-3
+                                    h6.fs-sm.mb-n1 Laura Willson
+                                    span.fs-ms.text-muted.opacity-75 Feb 05, 2020
+                    blockquote.mb-2
+                        .card.border-0.shadow-sm
+                            span.testimonial-mark
+                            .card-body.fs-md.text-muted
+                                .mb-2
+                                    .star-rating
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star
+                                        i.star-rating-icon.ci-star
+                                | Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        footer.d-flex.justify-content-center.pt-4
+                            .d-flex.align-items-center
+                                img.rounded-circle(src='img/testimonials/01.jpg' width='50' alt='Mary Grant')
+                                .ps-3
+                                    h6.fs-sm.mb-n1 Mary Alice Grant
+                                    span.fs-ms.text-muted.opacity-75 Jan 27, 2020
+                    blockquote.mb-2
+                        .card.border-0.shadow-sm
+                            span.testimonial-mark
+                            .card-body.fs-md.text-muted
+                                .mb-2
+                                    .star-rating
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star
+                                | Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        footer.d-flex.justify-content-center.pt-4
+                            .d-flex.align-items-center
+                                img.rounded-circle(src='img/shop/reviews/01.jpg' width='50' alt='Rafael Marquez')
+                                .ps-3
+                                    h6.fs-sm.mb-n1 Rafael Marquez
+                                    span.fs-ms.text-muted.opacity-75 Dec 19, 2020
+                    blockquote.mb-2
+                        .card.border-0.shadow-sm
+                            span.testimonial-mark
+                            .card-body.fs-md.text-muted
+                                .mb-2
+                                    .star-rating
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                | Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        footer.d-flex.justify-content-center.pt-4
+                            .d-flex.align-items-center
+                                img.rounded-circle(src='img/testimonials/02.jpg' width='50' alt='Adrian Lewis')
+                                .ps-3
+                                    h6.fs-sm.mb-n1 Adrian Lewis
+                                    span.fs-ms.text-muted.opacity-75 Dec 13, 2020
+                    blockquote.mb-2
+                        .card.border-0.shadow-sm
+                            span.testimonial-mark
+                            .card-body.fs-md.text-muted
+                                .mb-2
+                                    .star-rating
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star-filled.active
+                                        i.star-rating-icon.ci-star
+                                        i.star-rating-icon.ci-star
+                                | Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        footer.d-flex.justify-content-center.pt-4
+                            .d-flex.align-items-center
+                                img.rounded-circle(src='img/shop/reviews/03.jpg' width='50' alt='Daniel Adams')
+                                .ps-3
+                                    h6.fs-sm.mb-n1 Daniel Adams
+                                    span.fs-ms.text-muted.opacity-75 Dec 04, 2020
+    // Related products
+    section.container.position-relative(style='margin-top: -300px; z-index: 5;')
+        .bg-light.rounded-3.shadow-lg.py-5.px-grid-gutter
+            h2.text-center.pt-2.pt-md-4.mb-4.mb-md-5 You may also like
+            .tns-carousel
+                .tns-carousel-inner(data-carousel-options='{"items": 2, "controls": false, "autoHeight": true, "responsive": {"0":{"items":1},"500":{"items":2, "gutter": 18},"768":{"items":3, "gutter": 20}, "1100":{"items":4, "gutter": 30}}}')
+                    // Product
+                    div
+                        .card.product-card.card-static
+                            span.badge.badge-danger.badge-shadow Sale
+                            a.card-img-top.d-block.overflow-hidden(href='#')
+                                img(src='img/home/mono-product/products/01.jpg' alt='Product')
+                            .card-body.text-center.py-2
+                                h3.product-title.fs-sm
+                                    a(href='#') Wireless Bluetooth Headphones
+                                .product-price
+                                    span.text-accent
+                                        | $298.
+                                        small 50
+                                    del.fs-sm.text-muted
+                                        | $349.
+                                        small 99
+                    // Product
+                    div
+                        .card.product-card.card-static
+                            a.card-img-top.d-block.overflow-hidden(href='#')
+                                img(src='img/home/mono-product/products/02.jpg' alt='Product')
+                            .card-body.text-center.py-2
+                                h3.product-title.fs-sm
+                                    a(href='#') Wireless Bluetooth Headphones
+                                .product-price
+                                    span.text-accent
+                                        | $129.
+                                        small 99
+                    // Product
+                    div
+                        .card.product-card.card-static
+                            a.card-img-top.d-block.overflow-hidden(href='#')
+                                img(src='img/home/mono-product/products/03.jpg' alt='Product')
+                            .card-body.text-center.py-2
+                                h3.product-title.fs-sm
+                                    a(href='#') Wireless Bluetooth Earbuds
+                                .product-price
+                                    span.text-accent
+                                        | $95.
+                                        small 00
+                    // Product
+                    div
+                        .card.product-card.card-static
+                            a.card-img-top.d-block.overflow-hidden(href='#')
+                                img(src='img/home/mono-product/products/04.jpg' alt='Product')
+                            .card-body.text-center.py-2
+                                h3.product-title.fs-sm
+                                    a(href='#') Wireless Bluetooth Headphones
+                                .product-price
+                                    span.text-accent
+                                        | $214.
+                                        small 99
+                    // Product
+                    div
+                        .card.product-card.card-static
+                            a.card-img-top.d-block.overflow-hidden(href='#')
+                                img(src='img/home/mono-product/products/05.jpg' alt='Product')
+                            .card-body.text-center.py-2
+                                h3.product-title.fs-sm
+                                    a(href='#') Wireless Bluetooth Headphones
+                                .product-price
+                                    span.text-accent
+                                        | $179.
+                                        small 99
+                    // Product
+                    div
+                        .card.product-card.card-static
+                            a.card-img-top.d-block.overflow-hidden(href='#')
+                                img(src='img/home/mono-product/products/06.jpg' alt='Product')
+                            .card-body.text-center.py-2
+                                h3.product-title.fs-sm
+                                    a(href='#') Wireless Bluetooth Headphones
+                                .product-price
+                                    span.text-accent
+                                        | $219.
+                                        small 99
+
