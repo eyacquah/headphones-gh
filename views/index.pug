@@ -2,7 +2,7 @@ extends base
 
 block content
     // Hero section
-    section.bg-position-top-center.bg-repeat-0.pt-5.pb-5.py-md-10(style='background-image: url(img/home/mono-product/hero-bg.jpg);')
+    section.bg-position-top-center.bg-repeat-0.pt-5.pb-5.py-md-10(style='background-image: url(/img/home/mono-product/hero-bg.jpg);')
         .container.pt-4.mb-3.mb-lg-0
             .row
                 .col-lg-5.col-md-6.col-sm-8.offset-lg-1
@@ -31,17 +31,17 @@ block content
             .col-sm-6
                 #colorOptions.mb-5.mb-sm-0.text-center.text-sm-start
                     #color-1.radio-tab-pane.active(role='tabpanel')
-                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option01.jpg' alt='Color 1')
+                        img.d-block.mx-auto(src='/img/home/mono-product/colors/color-option01.jpg' alt='Color 1')
                     #color-2.radio-tab-pane(role='tabpanel')
-                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option02.jpg' alt='Color 1')
+                        img.d-block.mx-auto(src='/img/home/mono-product/colors/color-option02.jpg' alt='Color 1')
                     #color-3.radio-tab-pane(role='tabpanel')
-                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option03.jpg' alt='Color 1')
+                        img.d-block.mx-auto(src='/img/home/mono-product/colors/color-option03.jpg' alt='Color 1')
                     #color-4.radio-tab-pane(role='tabpanel')
-                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option04.jpg' alt='Color 1')
+                        img.d-block.mx-auto(src='/img/home/mono-product/colors/color-option04.jpg' alt='Color 1')
                     #color-5.radio-tab-pane(role='tabpanel')
-                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option05.jpg' alt='Color 1')
+                        img.d-block.mx-auto(src='/img/home/mono-product/colors/color-option05.jpg' alt='Color 1')
                     #color-6.radio-tab-pane(role='tabpanel')
-                        img.d-block.mx-auto(src='img/home/mono-product/colors/color-option06.jpg' alt='Color 1')
+                        img.d-block.mx-auto(src='/img/home/mono-product/colors/color-option06.jpg' alt='Color 1')
             .col-sm-6.text-center.text-sm-start
                 h2.pb-4 Choose your style
                 .mb-3
@@ -65,15 +65,15 @@ block content
                     .form-check.form-option.form-check-inline.mb-2
                         input#color4.form-check-input(type='radio' name='color' data-bs-label='colorOptionText' value='Club Navy')
                         label.form-option-label.rounded-circle(for='color4' data-bs-toggle='radioTab' data-bs-target='#color-4' data-bs-parent='#colorOptions')
-                            span.form-option-color.rounded-circle(style='background-image: url(img/home/mono-product/colors/color-radio01.png)')
+                            span.form-option-color.rounded-circle(style='background-image: url(/img/home/mono-product/colors/color-radio01.png)')
                     .form-check.form-option.form-check-inline.mb-2
                         input#color5.form-check-input(type='radio' name='color' data-bs-label='colorOptionText' value='Club White')
                         label.form-option-label.rounded-circle(for='color5' data-bs-toggle='radioTab' data-bs-target='#color-5' data-bs-parent='#colorOptions')
-                            span.form-option-color.rounded-circle(style='background-image: url(img/home/mono-product/colors/color-radio02.png)')
+                            span.form-option-color.rounded-circle(style='background-image: url(/img/home/mono-product/colors/color-radio02.png)')
                     .form-check.form-option.form-check-inline.mb-2
                         input#color6.form-check-input(type='radio' name='color' data-bs-label='colorOptionText' value='Club Red')
                         label.form-option-label.rounded-circle(for='color6' data-bs-toggle='radioTab' data-bs-target='#color-6' data-bs-parent='#colorOptions')
-                            span.form-option-color.rounded-circle(style='background-image: url(img/home/mono-product/colors/color-radio03.png)')
+                            span.form-option-color.rounded-circle(style='background-image: url(/img/home/mono-product/colors/color-radio03.png)')
                 a.btn.btn-primary(href='#')
                     i.ci-cart.fs-lg.me-2
                     | Add to Cart
@@ -84,28 +84,28 @@ block content
         h2.text-center.mb-5 Product gallery
         .row.gallery
             .col-md-4.col-sm-6.mb-grid-gutter
-                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/01.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
-                    img(src='img/home/mono-product/gallery/th01.jpg' alt='Gallery thumbnail')
+                a.gallery-item.rounded-3(href='/img/home/mono-product/gallery/01.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='/img/home/mono-product/gallery/th01.jpg' alt='Gallery thumbnail')
                     span.gallery-item-caption Gallery image caption
             .col-md-4.col-sm-6.mb-grid-gutter
-                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/02.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
-                    img(src='img/home/mono-product/gallery/th02.jpg' alt='Gallery thumbnail')
+                a.gallery-item.rounded-3(href='/img/home/mono-product/gallery/02.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='/img/home/mono-product/gallery/th02.jpg' alt='Gallery thumbnail')
                     span.gallery-item-caption Gallery image caption
             .col-md-4.col-sm-6.mb-grid-gutter
-                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/03.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
-                    img(src='img/home/mono-product/gallery/th03.jpg' alt='Gallery thumbnail')
+                a.gallery-item.rounded-3(href='/img/home/mono-product/gallery/03.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='/img/home/mono-product/gallery/th03.jpg' alt='Gallery thumbnail')
                     span.gallery-item-caption Gallery image caption
             .col-md-4.col-sm-6.mb-grid-gutter
-                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/04.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
-                    img(src='img/home/mono-product/gallery/th04.jpg' alt='Gallery thumbnail')
+                a.gallery-item.rounded-3(href='/img/home/mono-product/gallery/04.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='/img/home/mono-product/gallery/th04.jpg' alt='Gallery thumbnail')
                     span.gallery-item-caption Gallery image caption
             .col-md-4.col-sm-6.mb-grid-gutter
-                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/05.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
-                    img(src='img/home/mono-product/gallery/th05.jpg' alt='Gallery thumbnail')
+                a.gallery-item.rounded-3(href='/img/home/mono-product/gallery/05.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='/img/home/mono-product/gallery/th05.jpg' alt='Gallery thumbnail')
                     span.gallery-item-caption Gallery image caption
             .col-md-4.col-sm-6.mb-grid-gutter
-                a.gallery-item.rounded-3(href='img/home/mono-product/gallery/06.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
-                    img(src='img/home/mono-product/gallery/th06.jpg' alt='Gallery thumbnail')
+                a.gallery-item.rounded-3(href='/img/home/mono-product/gallery/06.jpg' data-bs-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>')
+                    img(src='/img/home/mono-product/gallery/th06.jpg' alt='Gallery thumbnail')
                     span.gallery-item-caption Gallery image caption
     // Product details
     section.container.py-4.py-md-5.my-2
@@ -154,7 +154,7 @@ block content
                                 | I was truly blown away by these headphones. Now, I can listen to aliens yell at each other all day long. 
                         footer.d-flex.justify-content-center.pt-4
                             .d-flex.align-items-center
-                                img.rounded-circle(src='img/testimonials/03.jpg' width='50' alt='Richard Davis')
+                                img.rounded-circle(src='/img/testimonials/03.jpg' width='50' alt='Richard Davis')
                                 .ps-3
                                     h6.fs-sm.mb-n1 Alien Eavesdropper
                                     span.fs-ms.text-muted.opacity-75 Feb 14, 2021
@@ -169,10 +169,10 @@ block content
                                         i.star-rating-icon.ci-star-filled.active
                                         i.star-rating-icon.ci-star-filled.active
                                         i.star-rating-icon.ci-star-filled.active
-                                | Wow!! These headphones are really out of this world. The dumsor-repellant features has consistently protected me. Thank you!
+                                | Wow!! These headphones are really out of this world. The dumsor-repellant features have consistently protected me. Thank you!
                         footer.d-flex.justify-content-center.pt-4
                             .d-flex.align-items-center
-                                img.rounded-circle(src='img/testimonials/04.jpg' width='50' alt='Laura Willson')
+                                img.rounded-circle(src='/img/testimonials/04.jpg' width='50' alt='Laura Willson')
                                 .ps-3
                                     h6.fs-sm.mb-n1 Dumsor Survivor
                                     span.fs-ms.text-muted.opacity-75 March 23, 2021
@@ -190,7 +190,7 @@ block content
                                 | These headphones saved my relationship! I'm now able to communicate seamlessly with my boyfriend in Mars. Thank you guys so much!
                         footer.d-flex.justify-content-center.pt-4
                             .d-flex.align-items-center
-                                img.rounded-circle(src='img/testimonials/01.jpg' width='50' alt='Mary Grant')
+                                img.rounded-circle(src='/img/testimonials/01.jpg' width='50' alt='Mary Grant')
                                 .ps-3
                                     h6.fs-sm.mb-n1 Grateful Human Girlfriend
                                     span.fs-ms.text-muted.opacity-75 April 6, 2021
@@ -208,7 +208,7 @@ block content
                                 | The built-in vanish mode is second to none!! I was able to consult greek gods without being visible to the naked eye.
                         footer.d-flex.justify-content-center.pt-4
                             .d-flex.align-items-center
-                                img.rounded-circle(src='img/shop/reviews/01.jpg' width='50' alt='Rafael Marquez')
+                                img.rounded-circle(src='/img/shop/reviews/01.jpg' width='50' alt='Rafael Marquez')
                                 .ps-3
                                     h6.fs-sm.mb-n1 Satisfied Fetish Priest
                                     span.fs-ms.text-muted.opacity-75 Dec 19, 2035
@@ -226,7 +226,7 @@ block content
                                 | Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         footer.d-flex.justify-content-center.pt-4
                             .d-flex.align-items-center
-                                img.rounded-circle(src='img/testimonials/02.jpg' width='50' alt='Adrian Lewis')
+                                img.rounded-circle(src='/img/testimonials/02.jpg' width='50' alt='Adrian Lewis')
                                 .ps-3
                                     h6.fs-sm.mb-n1 Adrian Lewis
                                     span.fs-ms.text-muted.opacity-75 Dec 13, 2020
@@ -244,7 +244,7 @@ block content
                                 | Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         footer.d-flex.justify-content-center.pt-4
                             .d-flex.align-items-center
-                                img.rounded-circle(src='img/shop/reviews/03.jpg' width='50' alt='Daniel Adams')
+                                img.rounded-circle(src='/img/shop/reviews/03.jpg' width='50' alt='Daniel Adams')
                                 .ps-3
                                     h6.fs-sm.mb-n1 Daniel Adams
                                     span.fs-ms.text-muted.opacity-75 Dec 04, 2020
@@ -259,7 +259,7 @@ block content
                         .card.product-card.card-static
                             span.badge.badge-danger.badge-shadow Sale
                             a.card-img-top.d-block.overflow-hidden(href='#')
-                                img(src='img/home/mono-product/products/01.jpg' alt='Product')
+                                img(src='/img/home/mono-product/products/01.jpg' alt='Product')
                             .card-body.text-center.py-2
                                 h3.product-title.fs-sm
                                     a(href='#') Time Travel Headphones
@@ -274,7 +274,7 @@ block content
                     div
                         .card.product-card.card-static
                             a.card-img-top.d-block.overflow-hidden(href='#')
-                                img(src='img/home/mono-product/products/02.jpg' alt='Product')
+                                img(src='/img/home/mono-product/products/02.jpg' alt='Product')
                             .card-body.text-center.py-2
                                 h3.product-title.fs-sm
                                     a(href='#') Mars Headphones Pro
@@ -286,7 +286,7 @@ block content
                     div
                         .card.product-card.card-static
                             a.card-img-top.d-block.overflow-hidden(href='#')
-                                img(src='img/home/mono-product/products/03.jpg' alt='Product')
+                                img(src='/img/home/mono-product/products/03.jpg' alt='Product')
                             .card-body.text-center.py-2
                                 h3.product-title.fs-sm
                                     a(href='#') Wireless Mind Control Earbuds
@@ -298,7 +298,7 @@ block content
                     div
                         .card.product-card.card-static
                             a.card-img-top.d-block.overflow-hidden(href='#')
-                                img(src='img/home/mono-product/products/04.jpg' alt='Product')
+                                img(src='/img/home/mono-product/products/04.jpg' alt='Product')
                             .card-body.text-center.py-2
                                 h3.product-title.fs-sm
                                     a(href='#') Wireless Bluetooth Headphones
@@ -310,7 +310,7 @@ block content
                     div
                         .card.product-card.card-static
                             a.card-img-top.d-block.overflow-hidden(href='#')
-                                img(src='img/home/mono-product/products/05.jpg' alt='Product')
+                                img(src='/img/home/mono-product/products/05.jpg' alt='Product')
                             .card-body.text-center.py-2
                                 h3.product-title.fs-sm
                                     a(href='#') Wireless Bluetooth Headphones
@@ -322,7 +322,7 @@ block content
                     div
                         .card.product-card.card-static
                             a.card-img-top.d-block.overflow-hidden(href='#')
-                                img(src='img/home/mono-product/products/06.jpg' alt='Product')
+                                img(src='/img/home/mono-product/products/06.jpg' alt='Product')
                             .card-body.text-center.py-2
                                 h3.product-title.fs-sm
                                     a(href='#') Wireless Bluetooth Headphones
