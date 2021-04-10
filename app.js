@@ -1,4 +1,3 @@
-const os = require("os");
 const path = require("path");
 const express = require("express");
 const morgan = require("morgan");
@@ -19,8 +18,6 @@ const globalErrorHandler = require("./controllers/errorController");
 
 // Routers
 const viewRouter = require("./routes/viewRoutes");
-const productRouter = require("./routes/productRoutes");
-// const orderRouter = require("./routes/orderRoutes");
 
 const app = express();
 
@@ -75,12 +72,6 @@ app.use((req, res, next) => {
 
 // MOUNTING ROUTERS
 app.use("/", viewRouter);
-// app.use("/dashboard", adminRouter);
-// app.use("/api/v1/users", userRouter);
-// app.use("/api/v1/customers", customerRouter);
-// app.use("/api/v1/orders", orderRouter);
-// app.use("/api/v1/categories", categoryRouter);
-app.use("/api/v1/products", productRouter);
 
 // Errors
 app.all("*", (req, res, next) => {
